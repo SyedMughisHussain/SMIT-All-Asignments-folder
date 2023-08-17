@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //Q1
+        var num1 = 3;
+        var num2 = 5;
+        var add = (num1 + num2);
+        document.write('Sum of ' + num1 + ' and ' + num2 + ' is ' + add);
+        document.write("<br>");
+        //Q2
+        var add = (num1 - num2);
+        document.write('Subtraction of ' + num1 + ' and ' + num2 + ' is ' + add);
+        document.write("<br>");
+        var add = (num1 * num2);
+        document.write('Multiplication of ' + num1 + ' and ' + num2 + ' is ' + add);
+        document.write("<br>");
+        var add = (num1 / num2);
+        document.write('Division of ' + num1 + ' and ' + num2 + ' is ' + add);
+        document.write("<br>");
+        var add = (num1 % num2);
+        document.write('Modulus of ' + num1 + ' and ' + num2 + ' is ' + add);
+        document.write("<br>");
+        //Q3
+        var num; //a
+        document.write("Value after variable declaration is undefined."); //b
+        document.write("<br>");
+        num = 5; //c
+        document.write("Initial value is: " + num); //d
+        document.write("<br>");
+        num++; //e
+        document.write("Value after increment is: " + num); //f
+        document.write("<br>");
+        num = num + 7; //g
+        document.write("Value after addition is: " + num); //h
+        document.write("<br>");
+        num--//i
+        document.write("Value after decerement is: " + num); //j
+        document.write("<br>");
+        num = num % 3; //k
+        document.write("The remainder is: " + num); //L
+        document.write("<br>");
+        //Q4
+        var oneTicketPrice = 600;
+        var buyTickets = 5;
+        var totalBill = oneTicketPrice * buyTickets;
+        document.write('Total cost to buy ' + buyTickets + ' tickets to a movie is ' + totalBill + 'PKR');
+        document.write("<br>");
+        //Q5
+        document.write('Table of ' + tableNumber);
+        document.write("<br>");
+        var tableNumber = 4;
+        for (var i = 1; i <= 10; i++) {
+            document.write(tableNumber + ' X ' + i + ' = ' + i * 4);
+            document.write("<br>");
+        }
+        //Q6
+        var temInCelsius = 25;  //a
+        var celsiusToFahrenheit = (temInCelsius * 1.8) + 32;
+        document.write(temInCelsius + 'C is ' + celsiusToFahrenheit + 'F');//b
+        document.write("<br>");
+        var tempInFarhenheit = 70; //c
+        var farhenheitToCelsius = (tempInFarhenheit - 32) * .5556;
+        document.write(tempInFarhenheit + 'F is ' + farhenheitToCelsius + 'C'); //d
+        document.write('<br>');
+        //Q7
+        var priceOfItem1 = 650;
+        var priceOfItem2 = 100;
+        var orderQuantityOfItem1 = 3;
+        var orderQuantityOfItem2 = 7;
+        var shipingCharges = 100;
+        var totalCost = priceOfItem1 * orderQuantityOfItem1 + priceOfItem2 * orderQuantityOfItem2 + shipingCharges;
+        document.write('Total cost of your order is ' + totalCost);
+        //Q8
+        var totalMarks = 980;
+        var obtainMArks = 804;
+        var percertange = obtainMArks / totalMarks * 100;
+        document.write('Total Marks: ' + totalMarks);
+        document.write('<br>');
+        document.write('Obtained Marks: ' + obtainMArks);
+        document.write('<br>');
+        document.write('Percentage: ' + percertange);
+        document.write('<br>');
+        //Q9
+        var oneDollar = 104.80;
+        var oneSaudiRiyal = 28;
+        var totalCurrency = oneDollar * 10 + oneSaudiRiyal * 25;
+        document.write('Total Currency in PKR is ' + totalCurrency);
+        document.write('<br>');
+        //Q10
+        var dummyVariable = 3;
+        var performAllCalInOneExpression = dummyVariable + 5 * 10 / 2;
+        //Q11
+        var currentYear = 2023;
+        var birthYear = 2003;
+        var age = currentYear - birthYear;
+        document.write('Current Year: ' + currentYear);
+        document.write('<br>');
+        document.write('Birth Year: ' + birthYear);
+        document.write('<br>');
+        document.write('Your age is: ' + age);
+        document.write('<br>');
+        //Q12
+        var radius = 20;
+        var pie = 3.142;
+        var radiusSquare = 20 * radius;
+        var circumfrence = 2 * pie * radius;
+        var area = pie * radiusSquare;
+        document.write('Radius of a circle is: ' + radius);
+        document.write('<br>');
+        document.write('The circumference is: ' + circumfrence);
+        document.write('<br>');
+        document.write('The area is: ' + area);
+        document.write('<br>');
+        //Q13
+        var favouriteSnack = 'Cup of Tea';
+        var currentAge = 20;
+        var maxAge = 80;
+        var snacksPerDay = 4;
+        var totalNeeded = (snacksPerDay * 365) * (maxAge - currentAge);
+        document.write('You will need ' + totalNeeded + ' ' + favouriteSnack + ' to last until the ripe old age is ' + maxAge);
+    </script>
+</body>
+
+</html>

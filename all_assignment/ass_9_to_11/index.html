@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q1
+        var cityName = prompt('Enter your city name: ');
+        if(cityName == 'karachi'){
+           document.write('Welcome to the city of lights.');
+           document.write('<br>');
+        }   
+        else
+        {
+            document.write('Welcome to another city');
+             document.write('<br>');
+        }
+        //Q2
+        var gender = prompt('Enter your gender');
+        if(gender == 'male'){
+         document.write('Good mornig Sir!');
+          document.write('<br>');
+        }
+        else{
+            document.write('Good morning Ma\'m');
+             document.write('<br>');
+        } 
+        //Q3
+        var inputColor = prompt('Enter the color of road traffic signal: ');
+        if(inputColor == 'red')
+        {
+         document.write('Must Stop');
+          document.write('<br>');
+        }
+        else if(inputColor == 'yellow') 
+        {
+        document.write('Ready to Move');
+          document.write('<br>');
+        }
+        else
+        {
+        document.write('Move now');
+          document.write('<br>');
+        }
+        //Q4
+        var fuel = parseFloat(prompt('Enter reamining fuel(in litres): '));
+        if(fuel <= 0.25) 
+        {
+          document.write('Please refill the fuel in the car:');
+        }
+        else
+        {
+            document.write('No need to refill the fuel in the car: ');
+        }
+        //
+         </script>
+</body>
+</html>

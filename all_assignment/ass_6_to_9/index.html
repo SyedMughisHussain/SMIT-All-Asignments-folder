@@ -74,7 +74,31 @@
           document.write('<br>');
         }
         //Q6
-        
+        var sub1 = prompt('Enter the 1st subject name: ');
+        var sub2 = prompt('Enter the 2nd subject name: ');
+        var sub3 = prompt('Enter the 3rf subject name: ');
+        var totalMarkforSubject1 = 100;
+        var totalMarkforSubject2 = 100;
+        var totalMarkforSubject3 = 100;
+        var obtMark1 = parseInt(prompt('Enter the obtain marks you got in 1st subject: '));
+        var obtMark2 = parseInt(prompt('Enter the obtain marks you got in 2st subject: '));
+        var obtMark3 = parseInt(prompt('Enter the obtain marks you got in 3st subject: '));
+        var totalMarks = totalMarkforSubject1 + totalMarkforSubject2 +totalMarkforSubject3;
+        var obtTotalMarks = obtMark1 + obtMark2 + obtMark3;
+        var totalPercentage = obtTotalMarks / totalMarks * 100;
+        var percentageForSub1 = obtMark1 / totalMarkforSubject1 * 100;
+        var percentageForSub2 = obtMark2 / totalMarkforSubject2 * 100;
+        var percentageForSub3 = obtMark3 / totalMarkforSubject3 * 100;
+        document.write('Subject   Total Marks   Obtained Marks   Percentage');
+        document.write('<br>');
+        document.write(sub1+  '        ' +totalMarkforSubject1+  '       '  +obtMark1+ '       '   +percentageForSub1+'%');
+        document.write('<br>');
+        document.write(sub2+  '        ' +totalMarkforSubject2+  '       '  +obtMark2+ '       '   +percentageForSub2+'%');
+        document.write('<br>');
+        document.write(sub3+  '        ' +totalMarkforSubject3+  '       '  +obtMark3+ '       '   +percentageForSub3+'%');
+        document.write('<br>');
+        document.write( '        ' +totalMarks+  '       '  +obtTotalMarks+ '       '   +totalPercentage+'%');
+        document.write('<br>');
     </script>
 </body>
 </html>

@@ -1,61 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <script>
-        //Q1
-        var cityName = prompt('Enter your city name: ');
-        if(cityName == 'karachi'){
-           document.write('Welcome to the city of lights.');
-           document.write('<br>');
-        }   
-        else
-        {
-            document.write('Welcome to another city');
-             document.write('<br>');
-        }
-        //Q2
-        var gender = prompt('Enter your gender');
-        if(gender == 'male'){
-         document.write('Good mornig Sir!');
-          document.write('<br>');
-        }
-        else{
-            document.write('Good morning Ma\'m');
-             document.write('<br>');
-        } 
-        //Q3
-        var inputColor = prompt('Enter the color of road traffic signal: ');
-        if(inputColor == 'red')
-        {
-         document.write('Must Stop');
-          document.write('<br>');
-        }
-        else if(inputColor == 'yellow') 
-        {
-        document.write('Ready to Move');
-          document.write('<br>');
-        }
-        else
-        {
-        document.write('Move now');
-          document.write('<br>');
-        }
-        //Q4
-        var fuel = parseFloat(prompt('Enter reamining fuel(in litres): '));
-        if(fuel <= 0.25) 
-        {
-          document.write('Please refill the fuel in the car:');
-        }
-        else
-        {
-            document.write('No need to refill the fuel in the car: ');
-        }
-        //
-         </script>
+  <script>
+    //Q1
+    // var cityName = prompt('Enter your city name: ');
+    // if (cityName == 'karachi') {
+    //   document.write('Welcome to the city of lights.');
+    //   document.write('<br>');
+    // }
+    // else {
+    //   document.write('Welcome to another city');
+    //   document.write('<br>');
+    // }
+    // //Q2
+    // var gender = prompt('Enter your gender');
+    // if (gender == 'male') {
+    //   document.write('Good mornig Sir!');
+    //   document.write('<br>');
+    // }
+    // else {
+    //   document.write('Good morning Ma\'m');
+    //   document.write('<br>');
+    // }
+    // //Q3
+    // var inputColor = prompt('Enter the color of road traffic signal: ');
+    // if (inputColor == 'red') {
+    //   document.write('Must Stop');
+    //   document.write('<br>');
+    // }
+    // else if (inputColor == 'yellow') {
+    //   document.write('Ready to Move');
+    //   document.write('<br>');
+    // }
+    // else {
+    //   document.write('Move now');
+    //   document.write('<br>');
+    // }
+    // //Q4
+    // var fuel = parseFloat(prompt('Enter reamining fuel(in litres): '));
+    // if (fuel <= 0.25) {
+    //   document.write('Please refill the fuel in the car:');
+    //   document.write('<br>')
+    // }
+    // else {
+    //   document.write('No need to refill the fuel in the car: ');
+    //   document.write('<br>')
+
+    // }
+    // //Q5
+    // //a
+    // var a = 4;
+    // if (++a === 5) {
+    //   alert('Given codition for variable a is true');
+    // }
+    // //b
+    // var b = 82;
+    // if (b++ === 83) {
+    //   alert('Given codition for variable b is true');
+    // }
+    // //c
+    // var c = 12;
+    // if (c++ == 13) {
+    //   alert('Condition 1 is true');
+    // }
+    // if (c == 13) {
+    //   alert('Condition 2 is true');
+    // }
+    // if (++c < 14) {
+    //   alert('Condition 3 is true');
+    // }
+    // if (c == 14) {
+    //   alert('Condition 4 is true');
+    // }
+    // //d
+    // var materialCost = 20000;
+    // var laborCost = 2000;
+    // var totalCost = materialCost + laborCost;
+    // if (totalCost === laborCost + materialCost) {
+    //   alert("The cost equals");
+    // }
+    // //e
+    // if (true) {
+    //   alert("True");
+    // }
+    // if (false) {
+    //   alert("False");
+    // }
+    // //f
+    // if ("car" < "cat") {
+    //   alert("car is smaller than cat");
+    // }
+    // //Q6
+    // var totalMarks = 300;
+    // var grade1 = 'A-One';
+    // var grade2 = 'A';
+    // var grade3 = 'B';
+    // var grade4 = 'Fail';
+    // var remarks1 = 'Excellent';
+    // var remarks2 = 'Good';
+    // var remarks3 = 'You nedd to improve';
+    // var remarks4 = 'Sorry';
+    // var obtMarkSub1 = parseFloat(prompt('Enter the obtain marks in subject 1: ')); 
+    // var obtMarkSub2 = parseFloat(prompt('Enter the obtain marks in subject 2: '));
+    // var obtMarkSub3 = parseFloat(prompt('Enter the obtain marks in subject 3: ')); 
+    // var totalObtMarks = obtMarkSub1 + obtMarkSub2 + obtMarkSub3;
+    // var percentage = totalObtMarks / totalMarks * 100;
+    // document.write('Total Marks: '+totalMarks);
+    // document.write('<br>');
+    // document.write('Marks Obtained: '+totalObtMarks);
+    // document.write('<br>');
+    // document.write('Percentage: '+percentage);   
+    // document.write('<br>');
+    // if(percentage >= 80)
+    // {
+    //  document.write('Grade: '+grade1);
+    //  document.write('<br>');
+    //  document.write('Remarks: '+remarks1);
+    // }
+    // else if(percentage >= 70)
+    // {
+    //  document.write('Grade: '+grade2);
+    //  document.write('<br>');
+    //  document.write('Remarks: '+remarks2);
+    // }
+    // else if(percentage >= 60)
+    // {
+    //  document.write('Grade: '+grade3);
+    //  document.write('<br>');
+    //  document.write('Remarks: '+remarks3);
+    // }
+    // else
+    // {
+    //  document.write('Grade: '+grade4);
+    //  document.write('<br>');
+    //  document.write('Remarks: '+remarks4);
+    // }
+    //Q7
+    // var seceretNo = 5;
+    // var guessNumber = parseFloat(prompt('Enter the no to guess: '));
+    // if(seceretNo == guessNumber){
+    //   document.write('Bingo! Correct Answer');
+    //   document.write('<br>');
+    // }
+    // else if(seceretNo == guessNumber + 1) {
+    //   document.write('Close enough to the correct answer');
+    //   document.write('<br>');
+    // }
+    // else{
+    //   document.write('The guess is wrong!');
+    //   document.write('<br>');
+    // }
+    //Q8
+    // var enterNumber = parseFloat(prompt('Enter the number to check: '));
+    // var divisibleBy3 = enterNumber % 3 ;
+    // if(divisibleBy3 == 0){
+    //   document.write('It is divisible by 3');
+    // }
+    // else{
+    //   document.write('No! it is not divisible by 3');
+    // }
+    //Q9
+    //  var checkNumber = parseFloat(prompt('Enter the number to check: '));
+    // if(checkNumber % 2 == 0){
+    //   document.write('It is even number');
+    // }
+    // else{
+    //   document.write('It is odd number');
+    // }
+    //Q10
+    // var temp = parseFloat(prompt('Enter the temperature: '));
+    // if(temp > 40){
+    // document.write('It is too hot outside.');
+    // document.write('<br>');
+    // }
+    // else if(temp > 30){
+    // document.write('The Weather today is Normal.');
+    // document.write('<br>');
+    // }
+    // else if(temp > 20){
+    // document.write('Today’s Weather is cool.');
+    // document.write('<br>');
+    // }
+    // else if (temp > 10){
+    // document.write('OMG! Today’s weather is so Cool.');
+    // document.write('<br>');
+    // }
+    // else{
+    //   document.write('Enter the value b/w 11 to 50');
+    //   document.write('<br>');
+    // }
+    //Q11
+    var firstNumber = parseFloat(prompt('Enter the first number:'));
+    var secondNumber = parseFloat(prompt('Enter the second number:'));
+    var operator = prompt('Enter What operation you need(*,+,-,/,%): ');
+    if(operator === '+'){
+    document.write('The addition b/w two numbers is '+parseFloat(firstNumber+secondNumber));
+    document.write('<br>');  
+  }
+  else if(operator === '-'){
+    document.write('The subtraction b/w two numbers is '+firstNumber-secondNumber);
+    document.write('<br>');  
+  }
+  else if(operator === '*'){
+    document.write('The multiplication b/w two numbers is '+firstNumber*secondNumber);
+    document.write('<br>');  
+  }
+  else if(operator === '/'){
+    document.write('The division b/w two numbers is '+firstNumber/secondNumber);
+    document.write('<br>');  
+  }
+  else if(operator === '%'){
+    document.write('The modulus b/w two numbers is '+firstNumber%secondNumber);
+    document.write('<br>');  
+  }
+  else{
+    document.write('Enter the true operator:');
+    document.write('<br>');
+  }
+
+
+  </script>
 </body>
+
 </html>

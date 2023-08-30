@@ -9,7 +9,7 @@
     <h1>Qualifications</h1>
     <script>
         //Q1
-        var studentName = [];
+        // var studentName = [];
         //Q2
         var studentName = [];
         //Q3
@@ -52,12 +52,63 @@
         document.write('Score of '+stdNames[2] + "is "+stdNumbers[2]+'. Percentage: '+perof3+'%')
         document.write('<br>')
         //Q9
+        var colorsName = ['Green', 'Blue', 'Red'];
+        document.write('Before '+colorsName);
+        document.write('<br>')
+        //a
+        var addColorBegining = prompt('What color do you want insert in the begining?');
+        colorsName.unshift(addColorBegining)
+        document.write('After inserting in beginning: '+colorsName);
+        document.write('<br>')
+        //b
+        var addColorEnd = prompt('What color do you want insert in the End?');
+        colorsName.push(addColorEnd)
+        document.write('After inserting in End: '+colorsName);
+        document.write('<br>')
+        //c
+        var addTwoColorBegining = prompt('What color do you want insert in the End?');
+        colorsName.push(addTwoColorBegining)
+        document.write('After inserting in End: '+colorsName);
+        document.write('<br>')
+        //d
+        colorsName.shift()
+        document.write('After deleting at the begining: '+colorsName)
+        document.write('<br>')
+        //e
+        colorsName.pop()
+        document.write('After deleting at the end: '+colorsName)
+        document.write('<br>')
+        //f
+        var index  = +prompt('At which index do you want to add color name:')
+        var userInputColor = prompt('Enter the color name:')
+        colorsName[index] = userInputColor;
+        document.write(colorsName);
+        //g
+        var index  = +prompt('At which index do you want to delete color name:')
+        var userInputColor = +prompt('Enter the color name:')
+        colorsName.splice(index, userInputColor);
+        document.write(colorsName);
         //Q10
         var scoreOfStd = [320, 230, 480, 120];
         document.write('Scores of students: '+scoreOfStd);
         scoreOfStd.sort();
         document.write('<br>')
         document.write('Ordered Scores of students: '+scoreOfStd);
+        document.write('<br>');
+        //Q11
+        var cities = ['Karachi', 'Islamabad', 'Quetta', 'Peshawar', 'Lahore'];
+        document.write('Cities List: '+cities);
+        document.write('<br>')
+        var selectedCities = [];
+        selectedCities = cities.copyWithin(1, 0, 3);
+        document.write(selectedCities);
+        //Q12
+        var arr = ['This' ,  'is' ,  'my' , 'cat'];
+        document.write('Array: '+arr);
+        document.write('<br>');
+        document.write('String: '+arr.join(' '));
+        document.write('<br>');
+
 
         
 

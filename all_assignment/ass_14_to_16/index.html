@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Qualifications</h1>
+    <select id="arr">Dropdown Items</select>
+
+
     <script>
         //Q1
         // var studentName = [];
@@ -108,13 +111,61 @@
         document.write('<br>');
         document.write('String: '+arr.join(' '));
         document.write('<br>');
-
-
-        
-
-
-
-
+       // Q13
+        var items  = [];
+        items.push('Keyboard')
+        items.push('mouse')
+        items.push('printer')
+        items.push('monitor')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items[0])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items[1])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items[2])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items[3])
+        document.write('<br>')
+        //Q14
+        var items2 = [];
+        items2.unshift('Keyboard')
+        items2.unshift('mouse')
+        items2.unshift('printer')
+        items2.unshift('monitor')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items2[0])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items2[1])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items2[2])
+        document.write('<br>')
+        document.write('Out:')
+        document.write('<br>')
+        document.write(items2[3])
+        //Q15
+        var phoneManufactures = ['Apple','Samsung','Motorola','Nokia','Sony','Haier']
+        var  select  = document.getElementById('arr')
+        function dropDown(){
+            for(var i =0; i<=phoneManufactures.length; i++) {
+                var optn = phoneManufactures[i];
+                let el = document.createElement('option');
+                el.textContent = optn;
+                el.value = optn;
+                select.appendChild(el);
+            }
+        }
     </script>
 </body>
 </html>

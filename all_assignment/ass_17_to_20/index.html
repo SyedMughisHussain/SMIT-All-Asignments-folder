@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 17 to 20</title>
 </head>
+
 <body>
     <script>
-        // //Q1
-        // var multidimensionalArray = [[''],[''],['']];
-        // //Q2
-        // var multidimensionalArray2 = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
-        // document.write(multidimensionalArray2[0]);
-        // document.write('<br>');
-        // document.write(multidimensionalArray2[1]);
-        // document.write('<br>');
-        // document.write(multidimensionalArray2[2]);
-        // document.write('<br>');
-        // //Q3
-        // for(var i =1; i<=10; i++){
-        //     document.write(i);
-        //     document.write('<br>');
-        // }
-        // //Q4
-        // var enterNumber = +prompt('Enter a number to show its multiplication table.');
-        // var enterLength = +prompt('Enter a length of multiplication table.');
-        // for(var i=1; i<=enterLength; i++)
-        // {
-        //     document.write(enterNumber+ ' X '+i+ ' = '+enterNumber*i);
-        //     document.write('<br>');
-        // }
-        // //Q5
-        // var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
-        // for(var i=0; i<=fruits.length -1; i++){
-        //     document.write(fruits[i]);
-        //     document.write('<br>');
-        // }
-        // for(var i=0; i<=fruits.length -1; i++){
-        //     document.write('Element at '+i+' is '+fruits[i]);
-        //     document.write('<br>');
-        // }
+        //Q1
+        var multidimensionalArray = [[''],[''],['']];
+        //Q2
+        var multidimensionalArray2 = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+        document.write(multidimensionalArray2[0]);
+        document.write('<br>');
+        document.write(multidimensionalArray2[1]);
+        document.write('<br>');
+        document.write(multidimensionalArray2[2]);
+        document.write('<br>');
+        //Q3
+        for(var i =1; i<=10; i++){
+            document.write(i);
+            document.write('<br>');
+        }
+        //Q4
+        var enterNumber = +prompt('Enter a number to show its multiplication table.');
+        var enterLength = +prompt('Enter a length of multiplication table.');
+        for(var i=1; i<=enterLength; i++)
+        {
+            document.write(enterNumber+ ' X '+i+ ' = '+enterNumber*i);
+            document.write('<br>');
+        }
+        //Q5
+        var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+        for(var i=0; i<=fruits.length -1; i++){
+            document.write(fruits[i]);
+            document.write('<br>');
+        }
+        for(var i=0; i<=fruits.length -1; i++){
+            document.write('Element at '+i+' is '+fruits[i]);
+            document.write('<br>');
+        }
         //Q6
         document.write('Counting:');
         document.write('<br>');
-        for(var i =1; i<=15; i++){
-            document.write(i+" ");
+        for (var i = 1; i <= 15; i++) {
+            document.write(i + " ");
         }
         document.write('<br>');
         document.write('Reverse Counting:');
         document.write('<br>');
-        for(var i =10; i>=1; i--){
-            document.write(i+" ");
+        for (var i = 10; i >= 1; i--) {
+            document.write(i + " ");
         }
         document.write('<br>');
         document.write('Even:');
         document.write('<br>');
-        for(var i =0; i<=20; i++){
-            if(i%2==0){
-            document.write(i+" ");
+        for (var i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(i + " ");
+            }
         }
-    }
         document.write('<br>');
         document.write('Odd:');
         document.write('<br>');
-        for(var i =0; i<=20; i++){
-            if(i%2==1){
-            document.write(i+" ");
+        for (var i = 0; i <= 20; i++) {
+            if (i % 2 == 1) {
+                document.write(i + " ");
+            }
         }
-    }
-        document.write('<br>');
         document.write('<br>');
         document.write('Series:');
         document.write('<br>');
-        for(var i =2; i<=20; i++){
-            document.write(i+1);
-    }
+        for (var i = 2; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(i + 'k ');
+            }
+        }
         document.write('<br>');
-        
-
-
+        //Q7
+        var enterItemToFind = prompt('Welcome to warsi bakery. What do you want to order?');
+        var items = ['cake', 'cookie', 'chips', 'patties', 'softdrink'];
+        var index = items.indexOf(enterItemToFind);
+        if (index == -1) {
+            document.write('We are Sorry. ' + enterItemToFind + ' is not available in our bakery:');
+        }
+        else {
+            document.write(enterItemToFind + ' is available at index ' + index + ' in our bakery.');
+        }
+        //Q8
+        var arr = [24,53,78,91,12]; 
+        document.write('Array items: ');
+        document.write(arr);
+        arr.sort();
+        var largest = arr[arr.length-1];
+        document.write('<br>')
+        document.write('The Largest number is '+largest);
+        document.write('<br>')
+        //Q9
+        var arr = [24,53,78,91,12]; 
+        document.write('Array items: ');
+        document.write(arr);
+        arr.sort();
+        document.write('<br>')
+        document.write('The Smallest number is '+arr[0]);
+        document.write('<br>')
+        //Q10
+        for(var i = 5; i<=100; i++)
+        {
+            if(i%5===0){
+            document.write(i+' ');
+        }}
     </script>
 </body>
+
 </html>

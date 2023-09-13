@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Q1
+        var enterNumber = +prompt('Enter a positive decimal number:');
+        document.write('Number: ' + enterNumber)
+        document.write('<br>')
+        var roundOff = Math.round(enterNumber);
+        document.write('Round off value: ' + roundOff)
+        document.write('<br>')
+        var floor = Math.floor(enterNumber);
+        document.write('Floor value: ' +floor )
+        document.write('<br>')
+        var ceil = Math.ceil(enterNumber);
+        document.write('Ceil value: ' + ceil)
+        document.write('<br>')
+
+        //Q2
+        var enterNumber = +prompt('Enter a negative decimal number:');
+        document.write('Number: ' + enterNumber)
+        document.write('<br>')
+        var roundOff = Math.round(enterNumber);
+        document.write('Round off value: ' + roundOff)
+        document.write('<br>')
+        var floor = Math.floor(enterNumber);
+        document.write('Floor value: ' +floor )
+        document.write('<br>')
+        var ceil = Math.ceil(enterNumber);
+        document.write('Ceil value: ' + ceil)
+        document.write('<br>')
+
+        //Q3
+        var obsoluteValue = +prompt('Enter the number to find its obsolute Number:');
+        if(obsoluteValue < 0){
+             document.write('The obsolute value of ' +obsoluteValue+ ' is '+(-1)*obsoluteValue);
+        }
+        else{
+            document.write('The obsolute value of ' +obsoluteValue+ ' is '+obsoluteValue);
+        }
+
+        //Q4
+        var diceValue  = (Math.random() * 6) + 1;
+        var newDiceValue = Math.floor(diceValue);
+        document.write('Random dice value from 1 to 6'+newDiceValue);
+
+        //Q5
+        var diceValue  = (Math.random() * 2) + 1;
+        var newDiceValue = Math.floor(diceValue);
+        if(newDiceValue === 2)
+        {
+            document.write(newDiceValue)
+            document.write('<br>')
+            document.write('Random coins value: Heads')
+        }
+        else{
+            document.write(newDiceValue)
+            document.write('<br>')
+            document.write('Random coins value: Tails')
+        }
+
+        //Q6
+        var diceValue  = (Math.random() * 100) + 1;
+        var newDiceValue = Math.floor(diceValue);
+        document.write('Random dice value from 1 and 100: '+newDiceValue);
+
+        //Q7
+        var userInput = prompt('Enter your weigth in kilograms (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms):');
+        if(userInput)
+        {
+            var weightInKilograms = parseFloat(userInput);
+            document.write('Your weight is: '+weightInKilograms+' kilograms:') 
+        }
+        else{
+            document.write("Invalid input. Please enter your weight in a valid format (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms).");
+        }
+
+        //Q8
+        var randomNumber = (Math.random() * 10) + 1;
+        var floorValue = Math.floor(randomNumber);
+        var userInputValue = +prompt('Enter a positive number between 1 and 10:');
+        if(floorValue === userInputValue){
+            alert('Your guess number is correct! You win');
+        }
+        else{
+            alert('Try Again!');
+        }
+    </script>
+
+
+</body>
+
+</html>

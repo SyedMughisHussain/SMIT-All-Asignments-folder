@@ -126,6 +126,19 @@
         // document.write('Last character of Input: '+user[user.length-1]);
 
         //Q18
+        var count = 0;
         var string = 'The quick brown fox jumps over the lazy dog';
+        var matchValue = 'the'
         var newString = string.toLowerCase();
-        
+        var newArr = newString.split(" ");
+        for (let i = 0; i < newArr.length; i++) {
+                if (newArr[i] === matchValue) {
+                    count += 1;
+                }
+            }
+            document.write('The quick brown fox jumps over the lazy dog')
+            document.write('<br>');
+            document.write('There are '+count+ ' occurence(s) of word '+matchValue);
+
+      
+

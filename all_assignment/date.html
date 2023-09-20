@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Practice</title>
+</head>
+<body>
+    
+
+    <script>
+        var rightnow  = new Date();
+       var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Monday"];
+        var toDay = rightnow.getDay();
+        if(dayNames[toDay] === dayNames[0] || dayNames[toDay] === dayNames[6]){
+            document.write('Its fun day');
+        }
+        else{
+            document.write('Its work day');
+        }
+       
+    </script>
+</body>
+</html>

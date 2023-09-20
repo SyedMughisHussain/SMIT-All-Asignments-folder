@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 31 to 34</title>
+</head>
+
+<body>
+
+    <script>
+
+        //Q1
+        var rightnow = new Date();
+        // document.write(rightnow)
+
+        //Q2
+        // var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        // var month = rightnow.getMonth();
+        // var montName = monthNames[month];
+        // document.write(montName);
+        
+        
+        //Q3
+        // var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        // var theDay = rightnow.getDay();
+        // var nameOfToday = dayNames[theDay];
+        // document.write(nameOfToday);
+
+        //Q4
+        // var dayNames2 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        // var toDay = rightnow.getDay();
+        // if(dayNames2[toDay] === dayNames2[0] || dayNames2[toDay] === dayNames2[6]){
+        //     document.write('Its fun day');
+        // }
+        // else{
+        //     document.write('Its work day');
+        // }
+
+        //Q5
+        // var date = rightnow.getDate();
+        // document.write(date);
+        // if(date < 16){
+        //     document.write('First fifteen days of a month.');
+        // }
+        // else{
+        //     document.write('Last days of a month.');
+        // }
+
+        // //Q6
+        // document.write('Current Date: '+rightnow);
+        // document.write('<br>');
+        // var allMilliseconds = Date.now(); 
+        // document.write('Elapsed milliseconds sice january 1, 1970: '+allMilliseconds);
+        // document.write('<br>');
+        // document.write('Elapsed minutes sice january 1, 1970: '+(allMilliseconds/1000)/60);
+        // document.write('<br>');
+
+        //Q7
+        // var hours = rightnow.getHours();
+        // if(hours <=12){
+        //     document.write('It\'s Am');
+        // }else{
+        //     document.write('It\'s Pm');
+
+        // }
+
+        //Q8
+        // var date = new Date("Dec 31 2020");
+        // document.write('Later Date: '+date);
+        // document.write('<br>');
+
+        // //Q9
+        // var newDate = new Date("Sun March 10, 2024");
+        // var getSeconds = rightnow.getSeconds();
+        // var date = newDate.getTime();
+        // var daysRemaining = date - Date.now();
+        // var daysRemainingInComingRamazan = daysRemaining /(1000 * 60 * 60 * 24)
+        // document.write(Math.ceil(daysRemainingInComingRamazan) +' days will remaining in upcomming ramazan 2024');
+
+        // //Q10
+        // var date = new Date().getTime() - new Date("Sat Dec 05 2015 22:50:16").getTime();
+        // document.write('On reference date ' +new Date("Sat Dec 05 2015 22:50:16"))
+        // document.write('<br>');
+        // document.write(Math.ceil(date /(1000 *60)) +' seconds had passed since beginning of 2015');
+
+        // Q11
+        var currentDate = new Date();
+        var curentHours = currentDate.getHours();
+        currentDate.setHours(curentHours + 1);
+        document.write('Current date: '+currentDate);
+        document.write('<br>');
+        document.write('1 hour ago, it was '+rightnow);
+
+
+        //Q13
+        // var enterAge = +prompt('Enter th age chack birth year.');
+        // document.write('Your age is: '+enterAge);
+        // var years = 2023 - enterAge;
+        // document.write('<br>');
+        // document.write('Your birth year is: '+years);
+
+        //Q14
+        // var customerName = prompt('Enter the name');
+        // var monthName = prompt('Enter the month name');
+        // var noOfUnits = +prompt('Enter no of units of last month');
+        // var chargesPerUnit = +prompt('Enter the charges per unit');
+        // var latePayement = 350;
+
+        // document.write('Customer Name: '+customerName);
+        // document.write('<br>');
+        // document.write('Month: '+monthName);
+        // document.write('<br>');
+        // document.write('Number of units: '+noOfUnits);
+        // document.write('<br>');
+        // document.write('Charges per unit: '+chargesPerUnit);
+        // document.write('<br>');
+        // document.write('<br>');
+        // document.write('Net Payable amount(Within due date): '+noOfUnits * chargesPerUnit);
+        // document.write('<br>');
+        // document.write('Late payment surcharge: '+latePayement);
+        // document.write('<br>');
+        // document.write('Gross amount payable(After due date): '+ (latePayement + (noOfUnits * chargesPerUnit)));
+
+
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

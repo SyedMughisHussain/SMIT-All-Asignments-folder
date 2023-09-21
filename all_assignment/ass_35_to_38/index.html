@@ -85,6 +85,19 @@
         // counting(startingNumber,endingNumber);
 
         // Q8
+        // function calculateHypotneuse(base,perpendicular){
+        //     function calculateSquare(x) {
+        //         return x*x;    
+        //     }
+        //     var baseSquare = calculateSquare(base);
+        //     var perpendicularSquare = calculateSquare(perpendicular);
+        //     var hypotneuse = baseSquare + perpendicularSquare;
+        //     var hypotneuseSquare = Math.sqrt(hypotneuse);
+        //     return hypotneuseSquare;
+        // }
+        // var result = calculateHypotneuse(3.0,4.0);
+        // document.write(`The hypotenuse of the right-angled triangle is ${result.toFixed(1)}`);
+
         // Q9
         // function areaOfRectangle(width,height){
         //     var area = width*height;
@@ -96,6 +109,26 @@
         // document.write(`The area of rectangle is ${result}.`);
 
         // Q10
+        function palindrome(checkWord) {
+            var checkLenght = checkWord.length;
+            for(var i=0; i<=checkLenght/2; i++)
+            {
+                if(checkWord[i] !== checkWord[checkLenght - 1 -i]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        var result = palindrome('madam');
+        if(result === true){
+            document.write('Yes its palindrome word.');
+        }else{
+            document.write('Its not a palindrome word.');
+        }
+
+
+
+
         // Q11
         function stringAs(valueInString){
             var counter = 0; 

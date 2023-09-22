@@ -13,100 +13,100 @@
     <script>
 
         // Q1
-        // function dateTime() {
-        //     var rightnow = new Date();
-        //     document.write(rightnow);
-        // }
-        // dateTime();
+        function dateTime() {
+            var rightnow = new Date();
+            document.write(rightnow);
+        }
+        dateTime();
 
         // Q2
-        // var firstName = prompt('Enter the first name.');
-        // var lastName = prompt('Enter the last name.');
-        // function userName(firstName,lastName) {
-        //     document.write(firstName +' '+lastName);
-        // }
-        // userName(firstName,lastName);
+        var firstName = prompt('Enter the first name.');
+        var lastName = prompt('Enter the last name.');
+        function userName(firstName,lastName) {
+            document.write(firstName +' '+lastName);
+        }
+        userName(firstName,lastName);
 
         // Q3
-        // function addNumbers() {
-        //     var firstNumber = +prompt('Enter the first number.');
-        //     var secondNumber = +prompt('Enter the second number.');
-        //     document.write(`The sum of ${firstNumber} and ${secondNumber} is: `+(firstNumber+secondNumber));
-        // }
-        // addNumbers();
+        function addNumbers() {
+            var firstNumber = +prompt('Enter the first number.');
+            var secondNumber = +prompt('Enter the second number.');
+            document.write(`The sum of ${firstNumber} and ${secondNumber} is: `+(firstNumber+secondNumber));
+        }
+        addNumbers();
 
         // Q4 
-        // function calculator(num1, num2, char) {
-        //     if (char === '+') {
-        //         document.write(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
-        //     }
-        //     else if (char === '-') {
-        //         document.write(`The subtraction of ${num1} and ${num2} is ${num1 - num2}`);
-        //     }
-        //     else if (char === '*') {
-        //         document.write(`The multiplication of ${num1} and ${num2} is ${num1 * num2}`);
-        //     }
-        //     else {
-        //         document.write(`The division of ${num1} and ${num2} is ${num1 / num2}`);
-        //     }
-        // }
-        // var number1 = +prompt('Enter the first no.');
-        // var number2 = +prompt('Enter the second no.');
-        // var character = prompt('Enter the operator for ex(+,-,*,/).');
-        // calculator(number1, number2, character);
+        function calculator(num1, num2, char) {
+            if (char === '+') {
+                document.write(`The addition of ${num1} and ${num2} is ${num1 + num2}`);
+            }
+            else if (char === '-') {
+                document.write(`The subtraction of ${num1} and ${num2} is ${num1 - num2}`);
+            }
+            else if (char === '*') {
+                document.write(`The multiplication of ${num1} and ${num2} is ${num1 * num2}`);
+            }
+            else {
+                document.write(`The division of ${num1} and ${num2} is ${num1 / num2}`);
+            }
+        }
+        var number1 = +prompt('Enter the first no.');
+        var number2 = +prompt('Enter the second no.');
+        var character = prompt('Enter the operator for ex(+,-,*,/).');
+        calculator(number1, number2, character);
 
         // Q5
-        // function noSuqares(num1) {
-        //     document.write(`The square of ${num1} is ${num1*num1}`);
-        // }
-        // noSuqares(5);
+        function noSuqares(num1) {
+            document.write(`The square of ${num1} is ${num1*num1}`);
+        }
+        noSuqares(5);
 
         // Q6
-        // function factorial(number){
-        //     var fact =1;
-        // for(var i=2; i<=number; i++){
-        //     fact *= i;
-        // }
-        // return fact;
-        //  }
-        // var enterNumber = +prompt('Enter the number to find its factorial');
-        // var result = factorial(enterNumber);
-        // document.write(`Factorial of ${enterNumber} is ${result}`);
+        function factorial(number){
+            var fact =1;
+        for(var i=2; i<=number; i++){
+            fact *= i;
+        }
+        return fact;
+         }
+        var enterNumber = +prompt('Enter the number to find its factorial');
+        var result = factorial(enterNumber);
+        document.write(`Factorial of ${enterNumber} is ${result}`);
 
         // Q7
-        // function counting(startNum, endNum) {
-        //     for (var i = startNum; i <= endNum; i++) {
-        //         document.write(i);
-        //         document.write('<br>');
-        //     }
-        // }
-        // var startingNumber = +prompt('Enter the starting number.');
-        // var endingNumber = +prompt('Enter the starting number.');
-        // counting(startingNumber,endingNumber);
+        function counting(startNum, endNum) {
+            for (var i = startNum; i <= endNum; i++) {
+                document.write(i);
+                document.write('<br>');
+            }
+        }
+        var startingNumber = +prompt('Enter the starting number.');
+        var endingNumber = +prompt('Enter the starting number.');
+        counting(startingNumber,endingNumber);
 
         // Q8
-        // function calculateHypotneuse(base,perpendicular){
-        //     function calculateSquare(x) {
-        //         return x*x;    
-        //     }
-        //     var baseSquare = calculateSquare(base);
-        //     var perpendicularSquare = calculateSquare(perpendicular);
-        //     var hypotneuse = baseSquare + perpendicularSquare;
-        //     var hypotneuseSquare = Math.sqrt(hypotneuse);
-        //     return hypotneuseSquare;
-        // }
-        // var result = calculateHypotneuse(3.0,4.0);
-        // document.write(`The hypotenuse of the right-angled triangle is ${result.toFixed(1)}`);
+        function calculateHypotneuse(base,perpendicular){
+            function calculateSquare(x) {
+                return x*x;    
+            }
+            var baseSquare = calculateSquare(base);
+            var perpendicularSquare = calculateSquare(perpendicular);
+            var hypotneuse = baseSquare + perpendicularSquare;
+            var hypotneuseSquare = Math.sqrt(hypotneuse);
+            return hypotneuseSquare;
+        }
+        var result = calculateHypotneuse(3.0,4.0);
+        document.write(`The hypotenuse of the right-angled triangle is ${result.toFixed(1)}`);
 
         // Q9
-        // function areaOfRectangle(width,height){
-        //     var area = width*height;
-        //     return area;
-        // }
-        // var startingNumber = +prompt('Enter the width.');
-        // var endingNumber = +prompt('Enter the height .');
-        // var result = areaOfRectangle(2,5);
-        // document.write(`The area of rectangle is ${result}.`);
+        function areaOfRectangle(width,height){
+            var area = width*height;
+            return area;
+        }
+        var startingNumber = +prompt('Enter the width.');
+        var endingNumber = +prompt('Enter the height .');
+        var result = areaOfRectangle(2,5);
+        document.write(`The area of rectangle is ${result}.`);
 
         // Q10
         function palindrome(checkWord) {
@@ -126,21 +126,68 @@
             document.write('Its not a palindrome word.');
         }
 
-
-
-
         // Q11
-        function stringAs(valueInString){
-            var counter = 0; 
-            for(var i=0; i<=valueInString.length ;i++){
-                if(valueInString[i] === ' '){
+        function uppercase(str){
+        var array1 = str.split(' ');
+        var newarray1 = [];
+        for(var x = 0; x < array1.length; x++){
+        newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+        }
+        return newarray1.join(' ');
+        }
+        var result = uppercase('the quick brown fox');
+        document.write(result);
 
+        // Q12
+        function stringAs(valueInString){
+            var splitString = valueInString.split(' ');
+            for(var i=0; i<=splitString.length; i++){
+                if(splitString[0].length > splitString[1].length){
+                    return splitString[0];
+                }
+                else if(splitString[1].length>splitString[2].length){
+                    return splitString[1];
+                }
+                else{
+                    return splitString[2];
+                }
+            }
+        }
+        var result = stringAs('Web Development Tutorial');
+        document.write(result);
+
+        // Q13
+        function noOfOcurrences(string,letterToCheckOccurence){
+            var counter =0;
+            string = string.toLowerCase();
+            for(var i=0; i<=string.length; i++){
+                if(string[i] === letterToCheckOccurence){
+                    counter +=1;
                 }
             }
             return counter;
         }
-        var result = stringAs('the quick brown fox');
-        document.write(result);
+        var result = noOfOcurrences('JSResources.com','r');
+        document.write(`The no of occurence is: ${result}`);
+
+        // Q14
+        function calcCircumference(radius){
+            var pie = 3.14;
+            var circumferenceOfCircle = 2*pie*radius;
+            return circumferenceOfCircle;
+        }
+        function calcArea(radius){
+            var radiusSquare = radius*radius;
+            var pie = 3.14;
+            var areaOfCircle = pie * radiusSquare;
+            return areaOfCircle;
+        }
+        var result1 = calcCircumference(3.0);
+        document.write(`The circumference is: ${result1}`); 
+        document.write('<br>');
+        
+        var result2 = calcArea(3.0);
+        document.write(`The area is: ${result2}`);
 
     </script>
 </body>

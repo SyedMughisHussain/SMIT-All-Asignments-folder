@@ -12,79 +12,166 @@
     <script>
 
         // Q1
-        // function power(a,b){
-        //     var powerOf = Math.pow(a,b);
-        //     return powerOf;
-        // }
-        // var result = power(5,3);
-        // document.write(`A raised to b is: ${result}`);
+        function power(a, b) {
+            var powerOf = Math.pow(a, b);
+            return powerOf;
+        }
+        var result = power(5, 3);
+        document.write(`A raised to b is: ${result}`);
 
         // Q2
-        // function leapYear(enterYear) {
-        //     if (enterYear % 4 === 0) {
-        //         return true;
-        //     }
-        //     else {
-        //         return false;
-        //     }
-        // }
-        // var year = +prompt('Enter the year to chech i.e leap year or not.');
-        // var result = leapYear(year);
-        // if (result === true) {
-        //     document.write(`${year} is a leap year.`);
-        // }
-        // else {
-        //     document.write(`${year} is a not leap year.`);
-        // }
+        function leapYear(enterYear) {
+            if (enterYear % 4 === 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        var year = +prompt('Enter the year to chech i.e leap year or not.');
+        var result = leapYear(year);
+        if (result === true) {
+            document.write(`${year} is a leap year.`);
+        }
+        else {
+            document.write(`${year} is a not leap year.`);
+        }
 
         // Q3
-        // function AreaOfTriangle(a,b,c){
-        //     function side(){
-        //         var sides = (a+b+c)/2;
-        //         return sides;
-        //         debugger;
-        //     }
-        //     var takes = side();
-        //     debugger;
-        //     var area = takes(takes-a)(takes-b)(takes-c);
-        //     debugger;
-        //     return area;
-        // }
-        // var result = AreaOfTriangle(2,3,4);
-        // document.write(result);
+        function AreaOfTriangle(a, b, c) {
+            function side() {
+                var sides = (a + b + c) / 2;
+                return sides;
+                debugger;
+            }
+            var takes = side();
+            debugger;
+            var area = Math.sqrt(takes * (takes - a) * (takes - b) * (takes - c)).toFixed(3);
+            debugger;
+            return area;
+        }
+        var result = AreaOfTriangle(2, 3, 4);
+        document.write(`Area of triangle is: ${result}cm2`);
 
         // Q4
-        // function marks(sub1,sub2,sub3){
-        //     function average(){
-        //         var avr = ((sub1+sub2+sub3)/3).toFixed(2);
-        //         return avr;
-        //     }
-        //     function percentage(){
-        //         var per = ((sub1+sub2+sub3)/300 * 100).toFixed(2);
-        //         return per;
-        //     }
-        //     var aver = average();
-        //     var perc = percentage();
-        //     return [aver,perc]; 
-        // }
-        // var result = marks(80,90,90);
-        // document.write(`The average is as following: ${result[0]}`);
-        // document.write('<br>');
-        // document.write(`The average is as following: ${result[1]}`);
+        function marks(sub1, sub2, sub3) {
+            function average() {
+                var avr = ((sub1 + sub2 + sub3) / 3).toFixed(2);
+                return avr;
+            }
+            function percentage() {
+                var per = ((sub1 + sub2 + sub3) / 300 * 100).toFixed(2);
+                return per;
+            }
+            var aver = average();
+            var perc = percentage();
+            return [aver, perc];
+        }
+        var result = marks(80, 90, 90);
+        document.write(`The average is as following: ${result[0]}`);
+        document.write('<br>');
+        document.write(`The average is as following: ${result[1]}`);
 
         // Q5
-        // function IndexOf(inputString,char){
-        //     for(let i=0; i<inputString.length; i++){
-        //         if(inputString[i]===char){
-        //             return i;
-        //         }
-        //     }
-        //     return -1;
-        // }
-        // var result = IndexOf('Syed Mughis Hussain','u');
-        // document.write(result);
+        function IndexOf(inputString, char) {
+            for (let i = 0; i < inputString.length; i++) {
+                if (inputString[i] === char) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        var result = IndexOf('Syed Mughis Hussain', 'u');
+        document.write(result);
 
         // Q6
+        function remVowel(str) {
+            let al = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+            let result = "";
+            for (let i = 0; i < str.length; i++) {
+                if (!al.includes(str[i])) {
+                    result += str[i];
+                    debugger
+                }
+            }
+            return result;
+        }
+        let str = "Syed Mughis Hussain";
+        document.write(remVowel(str));
+
+        // Q7
+        function sentence(string) {
+            let count = 0;
+            let vowels = 'aeiouAEIOU';
+            for (let i = 0; i < string.length; i++) {
+                let char1 = string[i];
+                let char2 = string[i + 1];
+                if (vowels.includes(char1) && vowels.includes(char2)) {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+        let result = sentence('Pleases read this application and give me gratuity');
+        document.write(`No of occurences of two vowels at one place is ${result}.`);
+
+        // Q8
+        function distanceInMeters(km) {
+            var meters = km * 1000;
+            return meters;
+        }
+        function distanceInFeet(km) {
+            var feets = km * 3280.84;
+            return feets;
+        }
+        function distanceInInches(km) {
+            var inches = km * 39370.1;
+            return inches;
+        }
+        function distanceInCentimetres(km) {
+            var centimeteres = km * 100000;
+            return centimeteres;
+        }
+        var input = +prompt('Enter the distance in km b/w two houses.');
+        var result1 = distanceInMeters(input);
+        document.write(`The ${input}km to meters is ${result1}m`);
+        document.write('<br>');
+        var result2 = distanceInFeet(input);
+        document.write(`The ${input}km to feet is ${result2}ft`);
+        document.write('<br>');
+        var result3 = distanceInInches(input);
+        document.write(`The ${input}km to inches is ${result3}in`);
+        document.write('<br>');
+        var result4 = distanceInCentimetres(input);
+        document.write(`The ${input}km to centimeters is ${result4}cm`);
+        document.write('<br>');
+
+        // Q9
+        function overTimePay(enterHours) {
+            let regularHours = 40;
+            let overTimePay = 12;
+            if (enterHours <= regularHours) {
+                return 0;
+            } else {
+                let extraHours = enterHours - regularHours;
+                let extraMoney = extraHours * overTimePay;
+                return extraMoney;
+            }
+        }
+        var result = overTimePay(45);
+        document.write(`Over time pay after 40 hours is: ${result}Rs`);
+
+        // Q10
+        function amoutWithdraw(enterAmount) {
+            let hundred = Math.floor(enterAmount / 100);
+            let fifty = Math.floor((enterAmount % 100) / 50);
+            let ten = (((enterAmount % 100) % 50) / 10);
+            return [hundred, fifty, ten];
+        }
+        var result = amoutWithdraw(470)
+        document.write(`You will have ${result[0]} hundred notes ${result[1]} fifty notes ${result[2]} ten notes.`);
+
+
     </script>
 
 </body>

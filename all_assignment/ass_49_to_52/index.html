@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 49 to 52</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form>
+        <label for="#name">First Name:</label><br>
+        <input type="text" placeholder="Enter Your Name" name="name" required id="name"><br><br>
+        <label for="#last">Last Name:</label><br>
+        <input type="text" placeholder="Enter Your Last Name" required name="name" id="last"><br><br>
+        <input style="background-color: aqua;" type="button" value="Submit" onclick="submitForm()">
+    </form>
+    <div>
+        <p class="first"></p>
+        <p class="lastNameOf"> </p>
+    </div>
+
+
+    <script>
+        function submitForm(){
+            let first = document.querySelector('.first');
+            let last = document.querySelector('.lastNameOf');
+            let firstName = document.querySelector('#name').value;
+            let lastName = document.querySelector('#last').value;
+            if(firstName === ''|| lastName === ''){
+                alert('Enter your Name correctly.');
+            }
+            else{
+                first.innerHTML = firstName;
+                last.innerHTML = lastName; 
+            }
+        }
+    </script>
+</body>
+</html>

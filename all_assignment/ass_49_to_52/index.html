@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 49 to 52</title>
 </head>
+
 <body>
-    <h1>HTML Forms</h1>
-    <form>
-        <label for="#name">First Name:</label><br>
+    <!-- Q1 -->
+    <!-- <h1>HTML Forms</h1> -->
+    <!-- <form> -->
+    <!-- <label for="#name">First Name:</label><br>
         <input type="text" placeholder="Enter Your Name" name="name" required id="name"><br><br>
         <label for="#last">Last Name:</label><br>
         <input type="text" placeholder="Enter Your Last Name" required name="name" id="last"><br><br>
@@ -17,23 +20,98 @@
     <div>
         <p class="first"></p>
         <p class="lastNameOf"> </p>
-    </div>
+    </div> -->
 
+    <!-- Q2 -->
+    <!-- <p>Lorem ipsum dolor....,<a href="#" onclick="readMore()" >ReadMore</a></p> -->
+
+    <!-- Q3 -->
+    <h1>Student Registration Form</h1>
+    <form>
+        <label for="stuName">Enter Name:</label>
+        <input type="text" name="studentName" id="stuName"><br><br>
+        <label for="stuAge">Enter Age:</label>
+        <input type="text" name="studentName" id="stuAge"><br><br>
+        <label for="stuMarks">Enter Marks:</label>
+        <input type="text" name="studentName" id="stuMarks"><br><br>
+        <button class="submit" onclick="addData()">Submit</button>
+    </form>
+        <table id="outputTable">
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+            </tr>
+        </table>
 
     <script>
-        function submitForm(){
-            let first = document.querySelector('.first');
-            let last = document.querySelector('.lastNameOf');
-            let firstName = document.querySelector('#name').value;
-            let lastName = document.querySelector('#last').value;
-            if(firstName === ''|| lastName === ''){
-                alert('Enter your Name correctly.');
+        // Q1
+        // function submitForm(){
+        //     let first = document.querySelector('.first');
+        //     let last = document.querySelector('.lastNameOf');
+        //     let firstName = document.querySelector('#name').value;
+        //     let lastName = document.querySelector('#last').value;
+        //     if(firstName === ''|| lastName === ''){
+        //         alert('Enter your Name correctly.');
+        //     }
+        //     else{
+        //         first.innerHTML = firstName;
+        //         last.innerHTML = lastName;
+        //     }
+        // }
+
+        // Q2
+        // function readMore() {
+        //     let value = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, rem. Ab eius ad architecto iusto tenetur asperiores quidem veritatis sunt molestias, esse sequi harum blanditiis eligendi doloribus? Eveniet, minus placeat.";
+        //     document.querySelector('p').innerHTML = value;
+        // }
+
+        // Q3
+        function addData() {
+            let nameofStudent = document.getElementById('stuName').value;
+            let age = document.getElementById('stuAge').value;
+            let marks = document.getElementById('stuMarks').value;
+                let table = document.getElementById("outputTable");
+                let newRow = table.insertRow(table.rows.length);
+                newRow.insertCell(0).innerHTML = nameofStudent;
+                newRow.insertCell(1).innerHTML = age;
+                newRow.insertCell(2).innerHTML = marks;
+                newRow.insertCell(3).innerHTML =
+                    '<button onclick="editData(this)">Edit</button>' +
+                    '<button onclick="deleteData(this)">Delete</button>';
+                    clearInputs();
             }
-            else{
-                first.innerHTML = firstName;
-                last.innerHTML = lastName; 
-            }
+        function editData(button) {
+            let row = button.parentNode.parentNode;
+            let nameCell = row.cells[0];
+            let ageCell = row.cells[1];
+            let marksCell = row.cells[2];
+            let nameInput =
+                prompt("Enter the updated name:",
+                    nameCell.innerHTML);
+            let ageInput =
+                prompt("Enter the updated age:",
+                    ageCell.innerHTML);
+            let marksInput =
+                prompt("Enter the updated marks:",
+                    marksCell.innerHTML
+                );
+            nameCell.innerHTML = nameInput;
+            ageCell.innerHTML = ageInput;
+            marksCell.innerHTML = marksInput;
         }
+        function deleteData(button) {
+            let row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+        function clearInputs() {
+            document.getElementById('stuName').value = "";
+            document.getElementById('stuAge').value = "";
+            document.getElementById('stuMarks').value = "";
+        }
+
+
     </script>
 </body>
+
 </html>

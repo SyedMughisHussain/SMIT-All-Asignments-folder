@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 58 to 67</title>
+</head>
+
+<body>
+    <!-- Q1. Consider you have following code snippet:
+        (Copy it in your HTML file) -->
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="conten">
+            <label for="first-name">First Name</label>
+            <input type=”text” id="first-name" />
+            <label for=”last-name”>Last Name</label>
+            <input type=”text” id="last-name" />
+            <label for=”email”>Email</label>
+            <input type=”text” id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <script>
+        // Q1
+        // A
+        let main_content = document.getElementById('main-content');
+        
+        // B 
+        console.log(main_content.children)
+
+        // C
+        var renderElements = document.getElementsByClassName("render");
+        for (var i = 0; i < renderElements.length; i++) {
+            console.log("InnerHTML of render element:", renderElements[i].innerHTML);
+        }
+ 
+        // D
+        document.getElementById('first-name').value = "Syed Mughis"
+        
+        //E 
+        document.getElementById('last-name').value = "Hussain"
+        document.getElementById('email').value = "syedmughis4541@gmail.com"
+
+        // Q2
+        // A
+        let nodeType = document.getElementById('form-content').nodeType;
+        console.log(nodeType);
+
+        // B
+        let lastNameElement = document.getElementById('lastName');
+        let lastNameChildNode = lastNameElement.childNodes[0].nodeType;
+        console.log(lastNameElement.nodeType + " " +lastNameChildNode);
+
+        // C
+        lastNameElement.childNodes[0].nodeValue = "Last Name: Updated";
+
+        // D 
+        let firstChild = main_content.firstElementChild;
+        let lastChild = main_content.lastElementChild;
+        console.log(firstChild);
+        console.log(lastChild);
+
+        //E
+        let next = lastNameElement.nextElementSibling;
+        let previous = lastNameElement.previousElementSibling;
+        console.log(next);
+        console.log(previous);
+
+        //F
+        let email = document.getElementById('email');
+        console.log(email.parentNode);
+        console.log(email.nodeType);
+    </script>
+</body>
+
+</html>
